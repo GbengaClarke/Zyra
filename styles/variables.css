@@ -1,0 +1,10 @@
+:root {
+  --dark-color: #0a0c0f;
+  --background-color: #f9f9f9;
+  --third-color: #0cdc9d;
+  --gray-color: #626262;
+
+  --font-head: "Poppins", sans-serif;
+  --font-body: "Roboto", sans-serif;
+  --font-logo: "Righteous", sans-serif;
+}

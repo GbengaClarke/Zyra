@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="aafavicon/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/main-page.css" />
+    <link rel="stylesheet" href="styles/categories.css" />
+    <title>Zyra - Category</title>
+  </head>
+  <body>
+    <main class="total-container">
+      <!-- header -->
+      <div class="total-header-container">
+        <div class="total-hamburger-container">
+          <input type="checkbox" name="" id="hamburger" hidden />
+          <label
+            for="hamburger"
+            class="hamburger-container js-hamburger-container"
+          >
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </label>
+          <div class="sidebar js-sidebar">
+            <div class="sub-section">
+              <a href="orders.html">
+                <div class="img-cont">
+                  <img
+                    src="./images/icons/shopping_bag_speed_24dp_DADADA_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt=""
+                  />
+                </div>
+                <p>Orders</p>
+              </a>
+              <a href="categories.html">
+                <div class="img-cont">
+                  <img
+                    src="./images/icons/favorite_24dp_DADADA_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt=""
+                  />
+                </div>
+                <p>Saved Items</p>
+              </a>
+              <a>
+                <div class="img-cont">
+                  <img
+                    src="./images/icons/local_activity_24dp_DADADA_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt=""
+                  />
+                </div>
+                <p>Voucher</p>
+              </a>
+              <a>
+                <div class="img-cont">
+                  <img
+                    src="./images/icons/inbox_text_24dp_DADADA_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt=""
+                  />
+                </div>
+                <p>Inbox</p>
+              </a>
+            </div>
+            <div class="sub-section">
+              <a style="font-weight: 700; color: #0cdc9d; cursor: auto">
+                Our Categories
+              </a>
+
+              <a href="categories.html?electronics=x">
+                Electronics &amp; Gadgets
+              </a>
+              <a href="categories.html?fashion=x"> Fashion &amp; Apparels </a>
+              <a href="categories.html?homeEssentials=x"> Home supplies </a>
+              <a href="categories.html?shopAll=x"> Super Market </a>
+            </div>
+            <div class="sub-section">
+              <a> Contact Us </a>
+              <a> Service Center </a>
+              <a> Sell on Zyra! </a>
+            </div>
+          </div>
+        </div>
+
+        <a href="index.html" class="zyra js-jibby">Zyra</a>
+
+        <div class="icons-container js-icons-container">
+          <div class="icon js-search-icon">
+            <img
+              src="images/icons/search_49dp_E2E0E0_FILL0_wght400_GRAD0_opsz48.svg"
+              alt=""
+            />
+          </div>
+
+          <div class="person-icon-container js-person-icon-container icon">
+            <img
+              src="images/icons/person_49dp_E2E0E0_FILL0_wght400_GRAD0_opsz48.svg"
+              alt=""
+            />
+
+            <div class="pop-up js-pop-up invisible">
+              <a href="categories.html">Saved Items</a>
+              <a href="orders.html">My Orders</a>
+              <a href="">Sign in</a>
+            </div>
+          </div>
+
+          <a href="checkout.html" class="cart-icon-container icon">
+            <img
+              src="images/icons/shopping_cart_49dp_E2E0E0_FILL0_wght400_GRAD0_opsz48.svg"
+              alt=""
+            />
+            <div class="notification-icon"></div>
+          </a>
+        </div>
+
+        <div class="search-bar-container js-search-bar-container invisible">
+          <div class="input-container">
+            <input
+              class="js-search-input"
+              type="text"
+              placeholder="Search for products..."
+            />
+            <div class="img js-search-products">
+              <img
+                class="search-bar-container-image"
+                src="images/icons/search_49dp_E2E0E0_FILL0_wght400_GRAD0_opsz48.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="cancel-container">
+            <p class="js-cancel" href="">Cancel</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- category -->
+      <section style="position: relative; padding-top: 5rem">
+        <div
+          class="section-label saved-items-container js-saved-items-container"
+        ></div>
+
+        <div
+          class="products-grid category-products-grid js-category-products-grid"
+        ></div>
+      </section>
+
+      <div class="empty js-empty invisible">
+        There are no saved items yet ;&#40;
+      </div>
+
+      <!-- footer -->
+      <footer>
+        <div class="footer-grid">
+          <div class="footer-logo-socials-container">
+            <div style="display: flex; align-items: center">
+              <p class="zyra-footer">Zyra</p>
+              <div class="zyra-logo-container">
+                <img
+                  src="images/icons/local_mall_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="socials-container">
+              <div class="social-icon">
+                <img src="images/icons/FB-icon.png" alt="" />
+              </div>
+              <div class="social-icon">
+                <img src="images/icons/icons8-instagram-100.png" alt="" />
+              </div>
+              <div class="social-icon">
+                <img src="images/icons/icons8-x-100.png" alt="" />
+              </div>
+              <div class="social-icon">
+                <img src="images/icons/icons8-youtube-100.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="second-footer-container footer-texts">
+            <p>Contact Us</p>
+            <p>Terms &amp; Conditions</p>
+            <p>Help Center</p>
+          </div>
+
+          <div class="third-footer-container footer-texts">
+            <p>Become a Seller</p>
+            <p>Privacy Notice</p>
+            <p>Black Friday</p>
+          </div>
+        </div>
+        <div class="copyright">&copy; 2024, All Rights Reserved</div>
+      </footer>
+    </main>
+
+    <script src="scripts/categories.js" type="module"></script>
+  </body>
+</html>
