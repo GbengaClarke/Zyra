@@ -42,19 +42,20 @@ export async function loadProductsFetch() {
   try {
     // load products API
 
-    const res = await fetch("https://supersimplebackend.dev/products/");
-    const resproducts = await res.json();
+    // const res = await fetch("https://supersimplebackend.dev/products/");
+    // const resproducts = await res.json();
 
-    const res2 = await fetch("../backend/fakeapi.json");
+    // const res2 = await fetch("../backend/fakeapi.json");
 
-    const res2products = await res2.json();
+    // const res2products = await res2.json();
 
-    products = [...res2products, ...resproducts];
+    // products = [...res2products, ...resproducts];
 
     // load products locally
-    // const response2 = await fetch("../backend/products.json");
+    
+    const response2 = await fetch("../backend/products.json");
 
-    // products = await response2.json();
+    products = await response2.json();
   } catch (error) {
     console.log(`server error occured: ${error}`);
   }
