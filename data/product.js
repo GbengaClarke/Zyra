@@ -53,7 +53,7 @@ export async function loadProductsFetch() {
 
     // load products locally
     
-    const response2 = await fetch("../backend/products.json");
+    const response2 = await fetch("./backend/products.json");
 
     products = await response2.json();
   } catch (error) {
@@ -105,3 +105,4 @@ export function getProduct(productId) {
 }
 
 loadProductsFetch();
+
